@@ -1,16 +1,17 @@
-### Converter for better Human Readable Representation of data
+## Human Readable Representation with BCH checksum
 
-Motivation:
-I liked the idea in BIP173, but I didn't like the existing implementations, especially regarding the fixed alphabet and
+### Motivation:
+
+I liked the idea in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki), but I didn't like the
+existing implementations, especially regarding the fixed alphabet and
 the version for the checksum. Therefore, I decided to make it more flexible.
 
-Pros:
+### Pros:
 - Configurability
 - Consistency check using BCH checksum
 - Alphabet of 32 symbols (5 bits per symbol)
-- Ability to compose parts of the representation
 
-Examples:
+### Examples:
 
 ```go
 package main
