@@ -1,7 +1,14 @@
 ### Converter for better Human Readable Representation of data
 
 Motivation:
-- 
+I liked the idea in BIP173, but I didn't like the existing implementations, especially regarding the fixed alphabet and
+the version for the checksum. Therefore, I decided to make it more flexible.
+
+Pros:
+- Configurability
+- Consistency check using BCH checksum
+- Alphabet of 32 symbols (5 bits per symbol)
+- Ability to compose parts of the representation
 
 Examples:
 
@@ -47,10 +54,3 @@ func main() {
 	fmt.Println("Default", res)
 }
 ```
-
-Pros:
-
-- Configurability
-- Consistency check using BCH checksum
-- Alphabet of 32 symbols (5 bits per symbol)
-- Ability to compose parts of the representation
