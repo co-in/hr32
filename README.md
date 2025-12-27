@@ -14,6 +14,7 @@ the version for the checksum. Therefore, I decided to make it more flexible.
 
 ### Examples:
 
+https://go.dev/play/p/CpowSCV352j
 ```go
 package main
 
