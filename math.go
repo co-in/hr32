@@ -118,6 +118,4 @@ func calcChecksum(result *[6]byte, pm int, alphabet string) {
 	for i := 0; i < 6; i++ {
 		result[i] = alphabet[byte((pm>>uint(5*(5-i)))&31)]
 	}
-
-	return
 }
